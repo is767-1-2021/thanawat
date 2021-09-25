@@ -1,4 +1,4 @@
-name: first_app
+name: team_app
 description: A new Flutter project.
 
 publish_to: 'none' 
@@ -12,20 +12,14 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  flutter_launcher_icons: ^0.9.2
-  provider: ^6.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-flutter_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/popcat1.png"
-  
+
 flutter:
   uses-material-design: true
   assets:
-    - assets/popcat1.png
-    - assets/popcat2.png
+    - assets/facebook.png
+    - assets/google.png

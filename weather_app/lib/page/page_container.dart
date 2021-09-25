@@ -42,7 +42,8 @@ class _PageContainerState extends State<PageContainer> {
         ),
         onSelected: (selection) {
           setState(() {
-            settings.activeCity = allAddedCities.firstWhere((city) => city.name == selection);
+            settings.activeCity =
+                allAddedCities.firstWhere((city) => city.name == selection);
           });
         },
         itemBuilder: (BuildContext context) {
