@@ -5,7 +5,6 @@ import 'package:team_apps/components/screens/register/register.dart';
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // ignore: unused_local_variable
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(

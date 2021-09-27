@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:team_apps/components/background.dart';
+import 'package:team_apps/components/screens/account/account.dart';
 import 'package:team_apps/screens/login/login.dart';
-import 'package:team_apps/screens/account/account.dart';
 
 class RegisterScreen extends StatelessWidget {
   @override
@@ -46,8 +46,8 @@ class RegisterScreen extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   border: UnderlineInputBorder(),
-                  labelText: "Mobile Number",
-                  icon: Icon(Icons.phone),
+                  labelText: "Email",
+                  icon: Icon(Icons.email),
                 ),
               ),
             ),
@@ -81,7 +81,14 @@ class RegisterScreen extends StatelessWidget {
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
               child: RaisedButton(
-                onPressed: () {},
+                onPressed: () => {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ProfileScreen(),
+                    ),
+                  ),
+                },
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(80.0),
                 ),
@@ -139,3 +146,5 @@ class RegisterScreen extends StatelessWidget {
     );
   }
 }
+
+push(BuildContext context, MaterialPageRoute materialPageRoute) {}
